@@ -1,6 +1,32 @@
 body{
     background-image: linear-gradient(-20deg, #ffff89, #fdd6bd 100%);
+    display: block;
+    align-items: center;
+    justify-content: center;
 }
+
+.box{
+    width: 320px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s ease-in;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+.box:hover img{
+    transform: scale(1.2);
+}
+
 hr{
     border-color: #ff9800;
 }
@@ -16,10 +42,7 @@ nav{
 .active{
     color: #c06500;
 }
-img{
-    display: block;
-    margin: auto;
-}
+
 .footer{
     display: flex;
     justify-content: center;
